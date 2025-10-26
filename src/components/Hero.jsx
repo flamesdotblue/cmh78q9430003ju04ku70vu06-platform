@@ -1,15 +1,13 @@
-import Spline from '@splinetool/react-spline';
-
 export default function Hero({ onStartOrder }) {
   return (
-    <section className="relative h-[78vh] w-full min-h-[520px] overflow-hidden">
-      <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/zhZFnwyOYLgqlLWk/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+    <section className="relative w-full overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_80%_10%,#e0e7ff,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(900px_500px_at_10%_20%,#fee2e2,transparent_60%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white to-white" />
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/10 via-white/20 to-white"></div>
-
-      <div className="relative z-10 mx-auto flex h-full w-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-[72vh] min-h-[520px] w-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="inline-flex items-center rounded-full bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 shadow-sm ring-1 ring-slate-900/5 backdrop-blur">
             Seamless ordering • Minimal design

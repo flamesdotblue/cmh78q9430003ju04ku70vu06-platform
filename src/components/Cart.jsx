@@ -5,13 +5,11 @@ export default function Cart({ isOpen, onClose, items, onAdd, onDecrement, onRem
 
   return (
     <div className={`fixed inset-0 z-50 ${isOpen ? '' : 'pointer-events-none'}`} aria-hidden={!isOpen}>
-      {/* Backdrop */}
       <div
         onClick={onClose}
         className={`absolute inset-0 bg-slate-900/40 transition-opacity ${isOpen ? 'opacity-100' : 'opacity-0'}`}
       />
 
-      {/* Panel */}
       <aside
         className={`absolute right-0 top-0 h-full w-full max-w-md transform bg-white shadow-2xl transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
